@@ -8,7 +8,7 @@
     <meta name="description" content="Página web en castellano de la empresa ficticia Coffee Lovers">
 
     <!-- Añado el icono y el título de la Web -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/CoffeLovers_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Logo_Iconos/CoffeLovers_icon.png">
     <title>Coffee Lovers</title>
 
     <!-- Importamos el CSS y el JS -->
@@ -17,7 +17,119 @@
 </head>
 
 <body>
+    <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
+    <header>
+        <!-- El logo de la empresa -->
+        <img src="./assets/images/Logo_Iconos/CoffeLovers_logo.png"
+            alt="Logo de la empresa que contiene 3 granos de cafe con el nombre de Coffee Lovers Spain" width="200"
+            height="70" class="header__logo">
 
+        <!-- El menu de la página con el estilo hamburguesa para las versiones móviles
+         Primero el icono -->
+        <img src="./assets/images/Logo_Iconos/Hamburger_icon.png"
+            alt="Icono de menu con 3 lineas horizontales en color marron" width="50" height="50"
+            class="header__hamburguer">
+
+        <!-- El contenido del menu -->
+        <nav class="header__menu">
+            <!-- El icono para cerrar el menu -->
+            <img src="./assets/images/Logo_Iconos/Close_icon.png" alt="Icono con una X en color marron" width="50"
+                height="50" class="header__menu-close">
+
+            <ul class="header__menu-list">
+                <li class="header__menu-item active"><a href="#" class="header__menu-link">INICIO</a></li>
+                <li class="header__menu-item"><a href="./views/galeria.html" class="header__menu-link">DESCUBRIR</a>
+                </li>
+                <li class="header__menu-item"><a href="./views/presupuesto.html" class="header__menu-link">COMPRAR</a>
+                </li>
+                <li class="header__menu-item"><a href="./views/contacto.html" class="header__menu-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Añado el contenido principal de la página -->
+    <main>
+        <!-- Añado el contenido de la página empezando con el hero -->
+        <section class="hero">
+            <div class="hero__container">
+                <!-- Imagen principal -->
+                <img src="./assets/images/indexPage/Image_Hero.png"
+                    alt="Icono de una cafetera de bar con distintos colores marrones" width="554" height="568"
+                    class="hero__image">
+
+                <!-- Texto del hero -->
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">DESCUBRE TÚ FORMA</h1>
+                        <div class="hero__paragraph">
+                            <p class="hero__paragraph-regular">¿No sabes como preparar tu café favorito?</p>
+                            <p class="hero__paragraph-bold">¡Deja que nosotros te ayudemos a escoger tu mejor
+                                opción!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón que llevara a la página de galería -->
+                <a href="./views/galeria.html" class="hero__button">QUIERO DESCUBRIR</a>
+            </div>
+        </section>
+
+        <!-- Añado la segunda sección -->
+        <section class="info">
+            <div class="info__container">
+                <div class="info__cards">
+                    <img src="./assets/images/indexPage/Variedad_cafeteras.png" alt="Cafetera con colores marrones"
+                        width="150" height="150" class="info__card-image">
+                    <p class="info__card-text">Variedad de Cafeteras</p>
+                </div>
+
+                <div class="info__cards">
+                    <img src="./assets/images/indexPage/Cafe_especialidad.png" alt="3 granos de café con tonos marrones"
+                        width="150" height="150" class="info__card-image">
+                    <p class="info__card-text">Café de Especialidad</p>
+                </div>
+
+                <div class="info__cards">
+                    <img src="./assets/images/indexPage/cafe_leche.png"
+                        alt="Cafe con leche en taza con el dibujo de un corazon" width="150" height="150"
+                        class="info__card-image">
+                    <p class="info__card-text">Amantes del Buen Café</p>
+                </div>
+
+                <div class="info__cards">
+                    <img src="./assets/images/indexPage/envio.png" alt="Icono de un paquete con tonalidades marrones"
+                        width="150" height="150" class="info__card-image">
+                    <p class="info__card-text">Envíos Rápidos entre 24h y 72h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Añado el footer que será el mismo en todas las páginas -->
+    <footer>
+        <p class="footer__copyright">©2025 Coffee Lovers. Todos los derechos reservados.</p>
+
+        <a href="./views/aviso_legal.html" class="footer__link">Aviso Legal</a>
+
+        <ul class="footer__socialMedia">
+            <li class="footer__socialMedia-item"><a href="https://es-es.facebook.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="./assets/images/Logo_Iconos/Facebook.png"
+                        alt="Icono de Facebook"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://www.instagram.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="./assets/images/Logo_Iconos/Instagram.png"
+                        alt="Icono de Instagram"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://x.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="./assets/images/Logo_Iconos/Twitter.png"
+                        alt="Icono de X"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://es.linkedin.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="./assets/images/Logo_Iconos/Linkedin.png"
+                        alt="Icono de Linkedin"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://www.youtube.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="./assets/images/Logo_Iconos/Youtube.png"
+                        alt="Icono de Youtube"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
