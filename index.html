@@ -75,7 +75,7 @@
             </div>
         </section>
 
-        <!-- Añado la segunda sección -->
+        <!-- Añado la segunda sección que contiene 4 tarjetas con diferentes imágenes y textos -->
         <section class="info">
             <div class="info__container">
                 <div class="info__cards">
@@ -101,6 +101,93 @@
                     <img src="./assets/images/indexPage/envio.png" alt="Icono de un paquete con tonalidades marrones"
                         width="150" height="150" class="info__card-image">
                     <p class="info__card-text">Envíos Rápidos entre 24h y 72h</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ahora añado la tercera sección que contiene noticias cargadas desde un archivo JSON -->
+        <section class="noticias">
+            <div class="noticias__titlePage">
+                <h2 class="section__title">NUESTRAS NOTICIAS FAVORITAS</h2>
+                <p class="section__subtitle">A continuación os dejamos distintas noticias con el tema principal del
+                    café con distintas anécdotas
+                </p>
+            </div>
+
+            <!-- Contenedor donde se mostrarán las noticias -->
+            <div class="noticias__container">
+                <!-- Contenedor para cada noticia -->
+                <div class="noticias__card">
+                    <!-- Donde ira el texto de la noticia -->
+                    <div class="noticias__text">
+                        <h3 class="noticias__title">Antes de tomar café, la gente se lavaba las manos con él</h3>
+                        <p class="noticias__paragraph">Unos cinco siglos antes de la popularidad del café como bebida
+                            caliente, un ingrediente misterioso comenzó a aparecer en libros árabes sobre medicina y
+                            botánica. Las descripciones de este ingrediente eran muy similares a las de nuestro café.
+                            Sin embargo, en lugar de bunn, se llamaba litera y, en lugar de beber este ingrediente, se
+                            usaba principalmente para limpiar y refrescar las manos.</p>
+                    </div>
+
+                    <!-- Donde ira la imagen de la noticia -->
+                    <img src="./assets/images/noticias/lavado_manos.png"
+                        alt="Icono de alguien lavandose freneticamente las manos" width="300" height="300"
+                        class="noticias__image">
+                </div>
+
+                <!-- Los botones para cambiar de noticia -->
+                <div class="noticias__buttons">
+                    <button class="noticias__buttons-left"><img src="./assets/images/noticias/Icon.png"
+                            alt="Flecha con un color marron" width="40" height="40"
+                            class="noticias__buttons-left-icon"></button>
+                    <button class="noticias__buttons-right"><img src="./assets/images/noticias/Icon.png"
+                            alt="Flecha con un color marron" width="40" height="40"
+                            class="noticias__buttons-right-icon"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Añado la cuarta sección que contiene un input para introducir el email -->
+        <section class="regalo">
+            <div class="regalo__container">
+                <!-- Imagen de la sección -->
+                <img src="./assets/images/indexPage/alex.png" alt="Persona con pelo afro y gafas de sol" width="600"
+                    height="600" class="regalo__image">
+
+                <!-- Contenido de la sección -->
+                <div class="regalo__content">
+                    <div class="regalo__text">
+                        <h3 class="regalo__title">EL REGALO DE ALEX</h3>
+                        <p class="regalo__paragraph">Alex nos ha dicho que quería regalarte un 10% de descuento en tu
+                            primer pedido, y siendo nuestra persona favorita no podíamos decirle que no...</p>
+                    </div>
+
+                    <!-- Input para introducir el email -->
+                    <div class="regalo__actions">
+                        <div class="regalo__errormsg">
+                            <input type="text" placeholder="Introduce tu correo@ejemplo.com" class="regalo__input">
+                            <p class="regalo__errormsg-text">ERROR AL INTRODUCIR EL CORREO</p>
+                        </div>
+                        <button class="regalo__button">Suscribirme</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor donde se mostrara que se ha suscrito -->
+            <div class="regalo_succes">
+                <!-- Imagen de la tarjeta -->
+                <img src="./assets/images/indexPage/alex.png" alt="Persona con pelo afro y gafas de sol" width="300"
+                    height="300" class="regalo__succes-image">
+
+                <!-- Contenido de la tarjeta -->
+                <div class="regalo__succes-content">
+                    <div class="regalo__succes-text">
+                        <h3 class="regalo__succes-title">REGALO ENVIADO</h3>
+                        <p class="regalo__succes-paragraph">Tu regalo ha sido, comprueba la bandeja de entrada de tu
+                            correo.</p>
+                    </div>
+
+                    <!-- Boton para cerrar la tarjeta -->
+                    <button class="regalo__succes-button">GRACIAS</button>
                 </div>
             </div>
         </section>
