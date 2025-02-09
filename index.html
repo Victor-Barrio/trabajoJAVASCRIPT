@@ -20,22 +20,24 @@
     <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
     <header>
         <!-- El logo de la empresa -->
-        <img src="./assets/images/Logo_Iconos/CoffeLovers_logo.png"
-            alt="Logo de la empresa que contiene 3 granos de cafe con el nombre de Coffee Lovers Spain" width="200"
-            height="70" class="header__logo">
+        <div class="logoIcons">
+            <img src="./assets/images/Logo_Iconos/CoffeLovers_logo.png"
+                alt="Logo de la empresa que contiene 3 granos de cafe con el nombre de Coffee Lovers Spain" width="200"
+                height="70" class="header__logo">
 
-        <!-- El menu de la página con el estilo hamburguesa para las versiones móviles
+            <!-- El menu de la página con el estilo hamburguesa para las versiones móviles
          Primero el icono -->
-        <img src="./assets/images/Logo_Iconos/Hamburger_icon.png"
-            alt="Icono de menu con 3 lineas horizontales en color marron" width="50" height="50"
-            class="header__hamburguer">
+            <img src="./assets/images/Logo_Iconos/Hamburger_icon.png"
+                alt="Icono de menu con 3 lineas horizontales en color marron" width="50" height="50"
+                class="header__hamburguer">
+
+            <!-- El icono para cerrar el menu -->
+            <img src="./assets/images/Logo_Iconos/Close_icon.png" alt="Icono con una X en color marron" width="50"
+                height="50" class="header__close">
+        </div>
 
         <!-- El contenido del menu -->
         <nav class="header__menu">
-            <!-- El icono para cerrar el menu -->
-            <img src="./assets/images/Logo_Iconos/Close_icon.png" alt="Icono con una X en color marron" width="50"
-                height="50" class="header__menu-close">
-
             <ul class="header__menu-list">
                 <li class="header__menu-item active"><a href="#" class="header__menu-link">INICIO</a></li>
                 <li class="header__menu-item"><a href="./views/galeria.html" class="header__menu-link">DESCUBRIR</a>
@@ -68,10 +70,10 @@
                                 opción!</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Botón que llevara a la página de galería -->
-                <a href="./views/galeria.html" class="hero__button">QUIERO DESCUBRIR</a>
+                    <!-- Botón que llevara a la página de galería -->
+                    <a href="./views/galeria.html" class="hero__button">QUIERO DESCUBRIR</a>
+                </div>
             </div>
         </section>
 

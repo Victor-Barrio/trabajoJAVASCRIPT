@@ -3,25 +3,51 @@
         {
             "titulo": "Antes de tomar café, la gente se lavaba las manos con él",
             "texto": "Unos cinco siglos antes de la popularidad del café como bebida caliente, un ingrediente misterioso comenzó a aparecer en libros árabes sobre medicina y botánica. Las descripciones de este ingrediente eran muy similares a las de nuestro café. Sin embargo, en lugar de bunn, se llamaba litera y, en lugar de beber este ingrediente, se usaba principalmente para limpiar y refrescar las manos.",
-            "imagen": "../assets/noticias/lavado_manos.png"
+            "imagen": "../assets/images/noticias/lavado_manos.png"
         },
         {
             "titulo": "El origen del café descafeinado",
             "texto": "Cuando el padre de Ludwig Roselius murió a la edad de 59 años en 1902, el médico que atendió al padre de Roselius explicó que la causa de la muerte se debía a la cantidad de café que el fallecido bebía todos los días. Así comenzó la búsqueda del café descafeinado durante toda su vida por parte de Roselius hijo.",
-            "imagen": "../assets/noticias/busqueda_cientifica.png"
+            "imagen": "../assets/images/noticias/busqueda_cientifica.png"
         },
         {
             "titulo": "El viaje de una bebida que conquistó el mundo",
             "texto": "El café, esa bebida oscura y rica que acompaña nuestros días, ha pasado de ser un manjar exclusivo de rituales religiosos a convertirse en una fuerza imparable que impulsa economías y estilos de vida. Cada día se consumen más de dos mil millones de tazas de café alrededor del mundo, y su popularidad no deja de crecer. Países que históricamente preferían el té, como China, están sucumbiendo al encanto de esta bebida, lo que sugiere que el café pronto podría convertirse en la bebida más popular del planeta.",
-            "imagen": "../assets/noticias/viaje.png"
+            "imagen": "../assets/images/noticias/viaje.png"
         }
     ],
-
     "galeria": [
-        {
-            "titulo": "El café descafeinado",
-            "texto": "El café descafeinado es una bebida que se utiliza para limpiar las manos y refrescar el cuerpo. Es una bebida rica en nutrientes y es considerada una bebida saludable. El café descafeinado es una bebida que se utiliza para limpiar las manos y refrescar el cuerpo. Es una bebida rica en nutrientes y es considerada una bebida saludable.",
-            "imagen": "../assets/galeria/cafe_descafeinado.png"
+        { 
+            "titulo": "PRENSA FRANCESA",
+            "tiempo": "3 a 4 minutos",
+            "dificultad": "Media / Alta",
+            "sabor": "Fuerte",
+            "informacion": "Funciona con el mismo método de infusión que en el té: el agua debe tener suficiente contacto con el café para extraer sus aromas y sabores. Además, recomendamos una molienda gruesa, ya que si no hay superficie de contacto se suele obtener sabores mas amargos.",
+            "imagen": "../assets/images/galeria/prensa_francesa.png"
+        },
+        { 
+            "titulo": "MÁQUINA ESPRESSO",
+            "tiempo": "25 a 30 segundos",
+            "dificultad": "Media a la hora de la limpieza de la máquina",
+            "sabor": "Concentrado y cremoso",
+            "informacion": "Con la máquina espresso solo tienes que preocuparte de que tenga agua y de la limpieza que se efectúa cada unos 15 días. Para hacerlo solo debes de poner unos 20g de café en la canasta del maneral, encajarlo en la ducha de la cafetera y darle al botón de largo o corto.",
+            "imagen": "../assets/images/indexPage/Image_Hero.png"
+        },
+        { 
+            "titulo": "MOKA ITALIANA",
+            "tiempo": "1 minuto aproximadamente",
+            "dificultad": "Fácil",
+            "sabor": "Concentrado y de buen sabor",
+            "informacion": "La moka es un instrumento con tres partes, la inferior donde llenaremos de agua, la segunda en el centro donde alojaremos el café, y la última que es por donde sale y queda guardado nuestro café líquido. Solo tendremos que añadir el agua y café y llevarla al fuego hasta que se escuche el silbido y ya sabremos que está listo.",
+            "imagen": "../assets/images/galeria/moka_italiana.png"
+        },
+        { 
+            "titulo": "AEROPRESS",
+            "tiempo": "1 minuto y medio aproximadamente",
+            "dificultad": "Media",
+            "sabor": "Simple y aromático",
+            "informacion": "Lo primero será montar el aparato y colocando el filtro, lo humedeceremos con agua caliente y lo enroscaremos al cilindro de infusión para después añadir el café y verter más agua hasta la marca central, removeremos durante unos 10 segundos para después añadir más agua hasta la marca superior y le introduciremos el émbolo de compresión, por último esperamos entre 30 y 55 segundos y presionaremos el émbolo lentamente hacia abajo para que salga nuestro café líquido.",
+            "imagen": "../assets/images/galeria/aeropress.png"
         }
     ]
 }

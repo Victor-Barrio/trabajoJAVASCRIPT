@@ -1,0 +1,439 @@
+/* Inicio el documento con un reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables y texto para el documento */
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../assets/fonts/Raleway/Raleway-Bold.ttf") format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lilita One";
+  src: url("../assets/fonts/Lilita_One/LilitaOne-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* Colores de la página */
+  --marronMedio: #874919;
+  --marronClaro: #e3c9b4;
+  --marronOscuro: #331600;
+
+  /* Letra de la página */
+  font-family: "Raleway Regular", sans-serif;
+  color: var(--marronOscuro);
+}
+
+/* Estilo del header */
+header {
+  width: 100%;
+  height: 130px;
+  padding: 30px;
+  background-color: var(--marronMedio);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in;
+  z-index: 2;
+}
+
+.logoIcons {
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 150px;
+  height: auto;
+}
+
+.header__hamburguer {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.header__close {
+  display: none;
+}
+
+header.active {
+  height: 100vh;
+  gap: 50px;
+}
+
+.header__menu {
+  display: none;
+}
+
+header.active .header__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.header__menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.header__menu-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+
+.header__menu-item:hover {
+  border-bottom: 3px solid var(--marronClaro);
+}
+
+.header__menu-item.active {
+  border-bottom: 3px solid var(--marronClaro);
+  font-family: "Raleway Bold", sans-serif;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: var(--marronOscuro);
+  font-size: 18px;
+}
+
+/* Estilo del footer */
+footer {
+  width: 100%;
+  height: 261px;
+  padding: 25px 40px;
+  background-color: var(--marronMedio);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--marronOscuro);
+  font-family: "Raleway Bold", sans-serif;
+  font-size: 16px;
+}
+
+.footer__socialMedia {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socialMedia-item {
+  transition: all ease-in-out 0.3s;
+}
+
+.footer__socialMedia-item:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo de cada página, empezando por el hero del index */
+.hero {
+  width: 100%;
+  height: auto;
+  padding: 0px 25px 65px;
+  background-color: var(--marronClaro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.hero__title {
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px;
+}
+
+.hero__paragraph {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero__paragraph-bold {
+  font-family: "Raleway Bold", sans-serif;
+}
+
+.hero__button {
+  width: 225px;
+  height: 60px;
+  background-color: var(--marronMedio);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--marronClaro);
+  font-size: 16px;
+}
+
+.hero__image {
+  width: 250px;
+  height: auto;
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+  .header__hamburguer {
+    display: none;
+  }
+
+  .header__close {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 0 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  .logoIcons {
+    width: auto;
+  }
+
+  .header__logo {
+    width: 175px;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__menu-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .header__menu-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+  }
+
+  .header__menu-link {
+    font-size: 14px;
+  }
+
+  /* Estilo del footer */
+  footer {
+    height: 100px;
+    align-items: center;
+    padding: 64px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__copyright {
+    width: 170px;
+  }
+
+  /* Estilo de cada página, empezando por el hero del index */
+  .hero {
+    padding: 70px;
+  }
+
+  .hero__container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero__title {
+    font-size: 55px;
+  }
+
+  .hero__paragraph {
+    font-size: 20px;
+  }
+
+  .hero__button {
+    width: 340px;
+    height: 90px;
+    font-size: 24px;
+  }
+
+  .hero__image {
+    width: 400px;
+    height: auto;
+  }
+}
+
+/* Media query para pc */
+@media screen and (min-width: 1024px) {
+  .header__hamburguer {
+    display: none;
+  }
+
+  .header__close {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 0 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  .logoIcons {
+    width: auto;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__menu-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .header__menu-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+  }
+
+  .header__menu-link {
+    font-size: 16px;
+  }
+
+  /* Estilo del footer */
+  .footer__copyright {
+    width: auto;
+  }
+
+  .footer__socialMedia {
+    justify-content: flex-end;
+    width: 345px;
+  }
+
+  /* Estilo de cada página, empezando por el hero del index */
+  .hero {
+    padding: 70px;
+  }
+
+  .hero__container {
+    width: 100%;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .hero__content {
+    width: 665px;
+  }
+
+  .hero__title {
+    font-size: 62px;
+  }
+
+  .hero__paragraph {
+    font-size: 24px;
+  }
+
+  .hero__image {
+    width: 555px;
+    height: auto;
+  }
+}
