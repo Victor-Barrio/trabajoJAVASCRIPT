@@ -41,8 +41,8 @@ body {
 /* Estilo del header */
 header {
   width: 100%;
-  height: 130px;
-  padding: 30px;
+  height: 100px;
+  padding: 20px 30px;
   background-color: var(--marronMedio);
   display: flex;
   flex-direction: column;
@@ -151,6 +151,11 @@ footer {
   color: var(--marronOscuro);
   font-family: "Raleway Bold", sans-serif;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+  color: var(--marronClaro);
 }
 
 .footer__socialMedia {
@@ -230,11 +235,52 @@ footer {
   text-decoration: none;
   color: var(--marronClaro);
   font-size: 16px;
+  transition: all ease-in-out 0.3s;
+}
+
+.hero__button:hover{
+  background-color: var(--marronOscuro);
 }
 
 .hero__image {
   width: 250px;
   height: auto;
+}
+
+/* Section Info */
+.info {
+  width: 100%;
+  height: auto;
+  padding: 65px 25px;
+  background-color: var(--marronMedio);
+}
+
+.info__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.info__cards {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.info__cards-image {
+  width: 75px;
+  height: auto;
+}
+
+.info__cards-text {
+  font-family: "Raleway Bold", sans-serif;
+  font-size: 16px;
+  color: var(--marronClaro);
 }
 
 /* Media query para tablets */
@@ -337,6 +383,35 @@ footer {
     width: 400px;
     height: auto;
   }
+
+  /* Section Info */
+  .info {
+    padding: 60px;
+  }
+
+  .info__container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .info__cards {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .info__cards-image {
+    width: 150px;
+  }
+
+  .info__cards-text {
+    font-size: 26px;
+  }
 }
 
 /* Media query para pc */
@@ -435,5 +510,13 @@ footer {
   .hero__image {
     width: 555px;
     height: auto;
+  }
+
+  /* Section Info */
+  .info {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 370px;
   }
 }
