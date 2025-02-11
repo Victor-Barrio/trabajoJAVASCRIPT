@@ -1,0 +1,21 @@
+/* Variables y texto para el documento */
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../assets/fonts/Raleway/Raleway-Bold.ttf") format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lilita One";
+  src: url("../assets/fonts/Lilita_One/LilitaOne-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}

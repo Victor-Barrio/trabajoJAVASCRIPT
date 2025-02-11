@@ -1,0 +1,52 @@
+/* Inicio el documento con un reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Colores de la página */
+  --marronMedio: #874919;
+  --marronClaro: #e3c9b4;
+  --marronOscuro: #331600;
+
+  /* Letra de la página */
+  font-family: "Raleway Regular", sans-serif;
+  color: var(--marronOscuro);
+}
+
+/* Estilo general de los titulos */
+.section__title {
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+}
+
+.section__subtitle {
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 16px;
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+  /* Estilo general de los titulos */
+  .section__title {
+    font-size: 50px;
+  }
+
+  .section__subtitle {
+    font-size: 20px;
+  }
+}
+
+/* Media query para pc */
+@media screen and (min-width: 1024px) {
+  /* Estilo general de los titulos */
+  .section__title {
+    font-size: 56px;
+  }
+
+  .section__subtitle {
+    font-size: 24px;
+  }
+}

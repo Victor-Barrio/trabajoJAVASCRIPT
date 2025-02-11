@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Barrio">
+    <meta name="description" content="Página web en castellano de la empresa ficticia Coffee Lovers">
+
+    <!-- Añado el icono y el título de la Web -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/Logo_Iconos/CoffeLovers_icon.png">
+    <title>Coffee Lovers</title>
+
+    <!-- Importamos el CSS y el JS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
+    <header>
+        <!-- El logo de la empresa -->
+        <div class="logoIcons">
+            <img src="../assets/images/Logo_Iconos/CoffeLovers_logo.png"
+                alt="Logo de la empresa que contiene 3 granos de cafe con el nombre de Coffee Lovers Spain" width="200"
+                height="70" class="header__logo">
+
+            <!-- El menu de la página con el estilo hamburguesa para las versiones móviles
+         Primero el icono -->
+            <img src="../assets/images/Logo_Iconos/Hamburger_icon.png"
+                alt="Icono de menu con 3 lineas horizontales en color marron" width="50" height="50"
+                class="header__hamburguer">
+
+            <!-- El icono para cerrar el menu -->
+            <img src="../assets/images/Logo_Iconos/Close_icon.png" alt="Icono con una X en color marron" width="50"
+                height="50" class="header__close">
+        </div>
+
+        <!-- El contenido del menu -->
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><a href="../index.html" class="header__menu-link">INICIO</a></li>
+                <li class="header__menu-item"><a href="../views/galeria.html" class="header__menu-link">DESCUBRIR</a>
+                </li>
+                <li class="header__menu-item"><a href="../views/presupuesto.html" class="header__menu-link">COMPRAR</a>
+                </li>
+                <li class="header__menu-item active"><a href="#" class="header__menu-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Añado el contenido principal de la página -->
+    <main>
+    </main>
+
+    <!-- Añado el footer que será el mismo en todas las páginas -->
+    <footer>
+        <p class="footer__copyright">©2025 Coffee Lovers. Todos los derechos reservados.</p>
+
+        <a href="../views/aviso_legal.html" class="footer__link">Aviso Legal</a>
+
+        <ul class="footer__socialMedia">
+            <li class="footer__socialMedia-item"><a href="https://es-es.facebook.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Facebook.png"
+                        alt="Icono de Facebook"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://www.instagram.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Instagram.png"
+                        alt="Icono de Instagram"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://x.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Twitter.png"
+                        alt="Icono de X"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://es.linkedin.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Linkedin.png"
+                        alt="Icono de Linkedin"></a></li>
+            <li class="footer__socialMedia-item"><a href="https://www.youtube.com" target="_blank"
+                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Youtube.png"
+                        alt="Icono de Youtube"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
