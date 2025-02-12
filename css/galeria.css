@@ -1,16 +1,4 @@
-/* Empezamos con las diferentes páginas, empezando por la de galería */
-.galeria {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--marronClaro);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 25px;
-  gap: 40px;
-}
-
+/* Iniciamos el documento con el Mobile First */
 .galeria__titlePage {
   width: 100%;
   display: flex;
@@ -125,12 +113,6 @@
 
 /* Media query para tablets */
 @media screen and (min-width: 768px) {
-  /* Empezamos con las diferentes páginas, empezando por la de galería */
-  .galeria {
-    padding: 65px;
-    gap: 80px;
-  }
-
   .galeria__titlePage {
     gap: 25px;
   }
@@ -175,7 +157,6 @@
 
 /* Media query para PC */
 @media screen and (min-width: 1024px) {
-  /* Empezamos con las diferentes páginas, empezando por la de galería */
   .galeria__titlePage {
     width: 100%;
     max-width: 770px;

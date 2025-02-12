@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,13 @@
 
     <!-- Importamos el CSS y el JS -->
     <link rel="stylesheet" href="../css/main.css">
-    <script defer src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
+
+    <!-- Importo la librería de los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+
+<body class="views">
     <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
     <header>
         <!-- El logo de la empresa -->
@@ -49,7 +54,51 @@
     </header>
 
     <!-- Añado el contenido principal de la página -->
-    <main>
+    <main class="pages">
+        <div class="aviso__container">
+            <div class="aviso__text">
+                <h1 class="aviso__title">1. Información General: De acuerdo con lo establecido en la normativa
+                    vigente, se
+                    informa a los usuarios de esta web sobre los datos del titular:</h1>
+                <ul class="aviso__list">
+                    <li class="section__subtitle">Titular: Víctor Barrio Martínez</li>
+                    <li class="section__subtitle">Domicilio Social: Carrer Ample, 20, Blanes 17300, Girona</li>
+                    <li class="section__subtitle">Correo Electrónico: coffelovers@blanes.com</li>
+                    <li class="section__subtitle">Número de Identificación Fiscal (NIF/CIF): C58749654</li>
+                </ul>
+            </div>
+
+            <div class="aviso__text">
+                <h2 class="aviso__title">2. Condiciones de Uso: El acceso y uso de este sitio web se rige por las
+                    siguientes condiciones:</h2>
+                <ul class="aviso__list">
+                    <li class="section__subtitle">El usuario se compromete a hacer un uso adecuado de los contenidos y
+                        servicios ofrecidos.</li>
+                    <li class="section__subtitle">Queda prohibido el uso de la web con fines ilícitos o lesivos.</li>
+                    <li class="section__subtitle">El titular se reserva el derecho de modificar o eliminar contenidos
+                        sin previo aviso.</li>
+                </ul>
+            </div>
+
+            <div class="aviso__text">
+                <h2 class="aviso__title">3. Propiedad Intelectual e Industrial</h2>
+                <p class="section__subtitle">Todos los contenidos de esta web (textos, imágenes, logotipos, etc.) están
+                    protegidos por derechos de propiedad intelectual e industrial y pertenecen a su legítimo titular.
+                </p>
+            </div>
+
+            <div class="aviso__text">
+                <h2 class="aviso__title">4. Responsabilidad</h2>
+                <p class="section__subtitle">El titular no se hace responsable de los daños o perjuicios que pudieran
+                    derivarse del uso de la web, ni garantiza la ausencia de virus u otros elementos dañinos.</p>
+            </div>
+
+            <div class="aviso__text">
+                <h2 class="aviso__title">5. Legislación y Jurisdicción Aplicable</h2>
+                <p class="section__subtitle">Este Aviso Legal se rige por la legislación española. Para cualquier
+                    controversia, las partes se someten a los juzgados y tribunales del domicilio del titular.</p>
+            </div>
+        </div>
     </main>
 
     <!-- Añado el footer que será el mismo en todas las páginas -->
@@ -60,21 +109,17 @@
 
         <ul class="footer__socialMedia">
             <li class="footer__socialMedia-item"><a href="https://es-es.facebook.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Facebook.png"
-                        alt="Icono de Facebook"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-facebook fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.instagram.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Instagram.png"
-                        alt="Icono de Instagram"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-instagram fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://x.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Twitter.png"
-                        alt="Icono de X"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-x-twitter fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://es.linkedin.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Linkedin.png"
-                        alt="Icono de Linkedin"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-linkedin fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.youtube.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Youtube.png"
-                        alt="Icono de Youtube"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-youtube fa-lg icons"></i></a></li>
         </ul>
     </footer>
 </body>
+
 </html>

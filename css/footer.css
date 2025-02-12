@@ -31,15 +31,17 @@ footer {
 .footer__socialMedia {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
-.footer__socialMedia-item {
-  transition: all ease-in-out 0.3s;
+.footer__socialMedia-item:hover .icons {
+  color: var(--marronClaro);
 }
 
-.footer__socialMedia-item:hover {
-  transform: scale(1.2);
+.icons {
+  color: var(--marronOscuro);
+  transition: all ease-in-out 0.3s;
 }
 
 /* Media query para tablets */

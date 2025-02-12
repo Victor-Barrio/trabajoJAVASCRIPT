@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,22 @@
 
     <!-- Importamos el CSS y el JS -->
     <link rel="stylesheet" href="../css/main.css">
-    <script defer src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script defer src="../js/mapa.js"></script>
+
+    <!-- Importo la librería de los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Importo la librería de Leaflet para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Importo el Plugin para la ruta -->
+    <link rel="stylesheet" href="../assets/Leaflet_Routing/dist/leaflet-routing-machine.css">
+    <script src="../assets/Leaflet_Routing/dist/leaflet-routing-machine.js"></script>
 </head>
-<body>
+
+<body class="views">
     <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
     <header>
         <!-- El logo de la empresa -->
@@ -49,7 +63,42 @@
     </header>
 
     <!-- Añado el contenido principal de la página -->
-    <main>
+    <main class="pages">
+        <div class="contacto__contenido">
+            <div class="contacto__titlePage">
+                <h1 class="section__title">CONTÁCTANOS</h1>
+                <p class="section__subtitle">Horario de Luneas a Viernes de 10:00h a 14:00h y de 16:00h a 19:00h</p>
+            </div>
+
+            <div class="contacto__info">
+                <div class="contacto__item">
+                    <i class="fa-solid fa-envelope fa-lg icons"></i>
+                    <div class="contacto__text">
+                        <h2 class="contacto__text-title">Email</h2>
+                        <p class="contacto__text-content">coffelovers@blanes.com</p>
+                    </div>
+                </div>
+
+                <div class="contacto__item">
+                    <i class="fa-solid fa-phone fa-lg icons"></i>
+                    <div class="contacto__text">
+                        <h2 class="contacto__text-title">Teléfono</h2>
+                        <p class="contacto__text-content">+34 972-58-96-85</p>
+                    </div>
+                </div>
+
+                <div class="contacto__item">
+                    <i class="fa-solid fa-map-pin fa-lg icons"></i>
+                    <div class="contacto__text">
+                        <h2 class="contacto__text-title">Oficina</h2>
+                        <p class="contacto__text-content">Carrer Ample, 20, Blanes 17300, Girona</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto__container-map" id="mapa">
+        </div>
     </main>
 
     <!-- Añado el footer que será el mismo en todas las páginas -->
@@ -60,21 +109,17 @@
 
         <ul class="footer__socialMedia">
             <li class="footer__socialMedia-item"><a href="https://es-es.facebook.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Facebook.png"
-                        alt="Icono de Facebook"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-facebook fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.instagram.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Instagram.png"
-                        alt="Icono de Instagram"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-instagram fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://x.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Twitter.png"
-                        alt="Icono de X"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-x-twitter fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://es.linkedin.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Linkedin.png"
-                        alt="Icono de Linkedin"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-linkedin fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.youtube.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Youtube.png"
-                        alt="Icono de Youtube"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-youtube fa-lg icons"></i></a></li>
         </ul>
     </footer>
 </body>
+
 </html>

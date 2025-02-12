@@ -13,10 +13,13 @@
 
     <!-- Importamos el CSS y el JS -->
     <link rel="stylesheet" href="../css/main.css">
-    <script defer src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
+
+    <!-- Importo la librería de los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body class="views">
     <!-- Primero de todo añado el header que será el mismo en todas las páginas -->
     <header>
         <!-- El logo de la empresa -->
@@ -51,7 +54,7 @@
     </header>
 
     <!-- Añado el contenido principal de la página -->
-    <main class="galeria">
+    <main class="pages">
         <div class="galeria__titlePage">
             <h1 class="section__title">¿COMO HACER UN BUEN CAFÉ?</h1>
             <p class="section__subtitle">Hay muchas formas distintas de hacer un buen café, pero a continuación te
@@ -112,20 +115,15 @@
 
         <ul class="footer__socialMedia">
             <li class="footer__socialMedia-item"><a href="https://es-es.facebook.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Facebook.png"
-                        alt="Icono de Facebook"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-facebook fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.instagram.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Instagram.png"
-                        alt="Icono de Instagram"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-instagram fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://x.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Twitter.png"
-                        alt="Icono de X"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-x-twitter fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://es.linkedin.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Linkedin.png"
-                        alt="Icono de Linkedin"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-linkedin fa-lg icons"></i></a></li>
             <li class="footer__socialMedia-item"><a href="https://www.youtube.com" target="_blank"
-                    class="footer__socialMedia-link"><img src="../assets/images/Logo_Iconos/Youtube.png"
-                        alt="Icono de Youtube"></a></li>
+                    class="footer__socialMedia-link"><i class="fa-brands fa-youtube fa-lg icons"></i></a></li>
         </ul>
     </footer>
 </body>

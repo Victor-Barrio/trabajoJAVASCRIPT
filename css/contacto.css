@@ -1,0 +1,126 @@
+/* Iniciamos el documento con el Mobile First */
+.contacto__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contacto__titlePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contacto__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  text-align: left;
+}
+
+.contacto__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icons {
+  width: 21px;
+}
+
+.contacto__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacto__text-title {
+  font-family: "Raleway Bold";
+  font-size: 16px;
+  color: var(--marronOscuro);
+}
+
+.contacto__text-content {
+  font-family: "Raleway Regular";
+  font-size: 14px;
+  color: var(--marronOscuro);
+}
+
+.contacto__container-map {
+  width: 100%;
+  height: 270px;
+  border: 5px solid var(--marronOscuro);
+  border-radius: 10px;
+}
+
+/* Media query para tablets */
+@media (min-width: 768px) {
+  .contacto__contenido {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .contacto__titlePage {
+    max-width: 350px;
+  }
+
+  .icons {
+    width: 21px;
+  }
+
+  .contacto__text-title {
+    font-size: 20px;
+  }
+
+  .contacto__text-content {
+    font-size: 16px;
+  }
+
+  .contacto__container-map {
+    width: 100%;
+    height: 400px;
+    border: 5px solid var(--marronOscuro);
+    border-radius: 10px;
+  }
+}
+
+/* Media query para pc */
+@media screen and (min-width: 1024px) {
+  .contacto__contenido {
+    width: 100%;
+    max-width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .contacto__titlePage {
+    max-width: 500px;
+  }
+
+  .icons {
+    width: 25px;
+  }
+
+  .contacto__text-title {
+    font-size: 22px;
+  }
+
+  .contacto__text-content {
+    font-size: 18px;
+  }
+
+  .contacto__container-map {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    border: 5px solid var(--marronOscuro);
+    border-radius: 10px;
+  }
+}
