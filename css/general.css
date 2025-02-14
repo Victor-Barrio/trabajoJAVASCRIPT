@@ -62,6 +62,11 @@ body.views {
     padding: 65px;
     gap: 80px;
   }
+
+  /* Estilos de las paginas */
+  .pages {
+    padding: 65px;
+  }
 }
 
 /* Media query para pc */

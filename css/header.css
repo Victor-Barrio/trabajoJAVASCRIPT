@@ -41,8 +41,16 @@ header {
 }
 
 header.active {
-  height: 100vh;
+  height: 101vh;
   gap: 50px;
+}
+
+header.active .header__hamburguer {
+  display: none;
+}
+
+header.active .header__close {
+  display: block;
 }
 
 .header__menu {
@@ -93,6 +101,11 @@ header.active .header__menu {
   color: var(--marronOscuro);
   font-size: 18px;
   transition: all ease-in-out 0.5s;
+}
+
+/* No scroll cuando se abra el menu */
+body.noScroll {
+  overflow: hidden;
 }
 
 /* Media query para tablets */

@@ -54,7 +54,128 @@
     </header>
 
     <!-- Añado el contenido principal de la página -->
-    <main>
+    <main class="pages">
+        <div class="presupuesto">
+            <div class="presupuesto__titlePage">
+                <h1 class="section__title">¿QUIERES COMPRAR UNA DE NUESTRAS CAFETERAS?</h1>
+                <p class="section__subtitle">¡Rellena el formulario y nos pondremos con ello!</p>
+            </div>
+
+            <form class="presupuesto__form">
+                <div class="presupuesto__dobleItem">
+                    <div class="presupuesto__options">
+                        <label for="nombre" class="presupuesto__label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="presupuesto__input" required>
+                        <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                    </div>
+
+                    <div class="presupuesto__options">
+                        <label for="apellidos" class="presupuesto__label">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" class="presupuesto__input" required>
+                        <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                    </div>
+                </div>
+
+                <div class="presupuesto__dobleItem">
+                    <div class="presupuesto__options">
+                        <label for="telefono" class="presupuesto__label">Teléfono de contacto:</label>
+                        <input type="text" id="telefono" name="telefono" class="presupuesto__input" required>
+                        <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                    </div>
+
+                    <div class="presupuesto__options">
+                        <label for="correo" class="presupuesto__label">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" class="presupuesto__input" required>
+                        <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                    </div>
+                </div>
+
+                <div class="presupuesto__options select">
+                    <label for="producto" class="presupuesto__label">Elige el producto:</label>
+                    <select name="producto" id="producto" class="presupuesto__input">
+                        <option value="opcion1">Prensa francesa (40€)</option>
+                        <option value="opcion2">Máquina espresso (110€)</option>
+                        <option value="opcion3">Moka italiana (20€)</option>
+                        <option value="opcion4">Aeropress (35€)</option>
+                    </select>
+                    <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                </div>
+
+                <div class="presupuesto__dobleItem">
+                    <div class="presupuesto__options">
+                        <label for="envio" class="presupuesto__label">Plazo en dias:</label>
+                        <input type="number" id="envio" name="envio" class="presupuesto__input" required>
+                        <span class="presupuesto__form-error">Este apartado és incorrecto</span>
+                    </div>
+
+                    <div class="presupuesto__options">
+                        <p class="presupuesto__info">* A partir de los 20 días se hace un descuento de 10€ ya que no es
+                            un envió urgente. (max 180 días)</p>
+                    </div>
+                </div>
+
+                <div class="presupuesto__options">
+                    <label class="presupuesto__label">Extras del producto:</label>
+                    <ul class="presupuesto__extrabtns">
+                        <li class="presupuesto__extrabtns-rows">
+                            <div class="presupuesto__radiobtn">
+                                <label for="extras1" class="presupuesto__extraslabel">Mantenimiento 1 año (120€)</label>
+                                <input type="checkbox" name="extras" id="extras1" value="120"
+                                    class="presupuesto__extras">
+                            </div>
+                            <div class="presupuesto__radiobtn">
+                                <label for="extras2" class="presupuesto__extraslabel">2kg de nuestro café de
+                                    especialidad (30€)</label>
+                                <input type="checkbox" name="extras" id="extras2" value="30"
+                                    class="presupuesto__extras">
+                            </div>
+                        </li>
+                        <li class="presupuesto__extrabtns-rows">
+                            <div class="presupuesto__radiobtn">
+                                <label for="extras3" class="presupuesto__extraslabel">Kit de limpieza avanzada
+                                    (20€)</label>
+                                <input type="checkbox" name="extras" id="extras3" value="20"
+                                    class="presupuesto__extras">
+                            </div>
+                            <div class="presupuesto__radiobtn">
+                                <label for="extras4" class="presupuesto__extraslabel">Moledora de café (55€)</label>
+                                <input type="checkbox" name="extras" id="extras4" value="55"
+                                    class="presupuesto__extras">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="presupuesto__dobleItem">
+                    <div class="presupuesto__options">
+                        <label for="presupuesto" class="presupuesto__label">Presupuesto:</label>
+                        <input type="text" id="presupuesto" name="presupuesto" class="presupuesto__input total"
+                            disabled>
+                    </div>
+
+                    <div class="presupuesto__options">
+                        <p class="presupuesto__info">* Este apartado calcula el total del pedido.</p>
+                    </div>
+                </div>
+
+                <div class="presupuesto__options politica">
+                    <label for="politica" class="presupuesto__label">He leído la política de privacidad</label>
+                    <input type="checkbox" name="politica" id="politica" class="presupuesto__checkbox" required>
+                </div>
+
+                <button type="submit" class="presupuesto__button">Enviar</button>
+            </form>
+        </div>
+
+        <div class="presupuesto__succes active">
+            <div class="presupuesto__succes-text">
+                <h2 class="presupuesto__succes-title">TU PEDIDO HA SIDO RECIBIDO</h2>
+                <p class="presupuesto__succes-subtitle">Hemos recibido correctamente tu pedido, si sucediera cualquier
+                    cosa nos pondremos en contacto contigo para solucionarlo lo antes posible.</p>
+            </div>
+
+            <button class="presupuesto__succes-btn">HACER OTRO PEDIDO</button>
+        </div>
     </main>
 
     <!-- Añado el footer que será el mismo en todas las páginas -->
