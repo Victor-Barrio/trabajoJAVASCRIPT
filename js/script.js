@@ -37,15 +37,6 @@ actualizarClases();
 // Detectar cambios de tamaño en tiempo real
 window.addEventListener("resize", actualizarClases);
 
-// Funcion global para obtener el JSON
-export async function getJSON() {
-    const response = await fetch("/json/info.json");
-    if (!response.ok) {
-        throw new Error("Error al cargar el archivo JSON");
-    }
-    return response.json();
-}
-
 // Funcion global para borrar las animaciones
 export function borrarAnimaciones(event) {
     event.target.classList.remove("slide-left", "slide-right", "fade-in-left", "fade-in-right");

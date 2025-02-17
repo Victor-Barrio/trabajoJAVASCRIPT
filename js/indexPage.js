@@ -1,5 +1,4 @@
 // Importamos las funciones globales
-import { getJSON } from "../js/script.js";
 import { borrarAnimaciones } from "../js/script.js";
 import { emailRegex } from "../js/script.js";
 
@@ -23,6 +22,15 @@ let noticiaActual = 0;
 
 // Añado event listeners para quitar animaciones
 noticiasCards.addEventListener("animationend", borrarAnimaciones);
+
+// Funcion global para obtener el JSON
+async function getJSON() {
+    const response = await fetch("./json/info.json");
+    if (!response.ok) {
+        throw new Error("Error al cargar el archivo JSON");
+    }
+    return response.json();
+}
 
 // Funcion para cambiar de noticia
 async function cambiarNoticia(direccion) {

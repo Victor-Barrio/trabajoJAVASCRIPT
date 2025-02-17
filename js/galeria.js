@@ -1,5 +1,4 @@
 // Importamos las funciones globales
-import { getJSON } from "../js/script.js";
 import { borrarAnimaciones } from "../js/script.js";
 
 // Declaramos las variables globales que usaremos
@@ -14,6 +13,15 @@ const galeriaImage = document.querySelector(".galeria__image");
 
 let galeriaActual = 0;
 let autoPlay;
+
+// Funcion global para obtener el JSON
+async function getJSON() {
+    const response = await fetch("../json/info.json");
+    if (!response.ok) {
+        throw new Error("Error al cargar el archivo JSON");
+    }
+    return response.json();
+}
 
 // Añado event listeners para quitar animaciones
 galeriaCards.addEventListener("animationend", borrarAnimaciones);
