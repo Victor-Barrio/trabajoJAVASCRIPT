@@ -23,8 +23,8 @@ const allInputs = document.querySelectorAll(".presupuesto__input");
 presupuestoForm.addEventListener("submit", e => e.preventDefault());
 
 // Declaramos las Expresiones regulares
-const nombreRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ]{2,15}+$/;
-const apellidosRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]{2,40}+$/;
+const nombreRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ]{2,15}$/;
+const apellidosRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]{2,40}$/;
 const numeroTelRegex = /^[0-9]{9}$/;
 const envioRegex = /^[0-9]{1,3}$/;
 
