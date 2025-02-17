@@ -39,7 +39,7 @@ window.addEventListener("resize", actualizarClases);
 
 // Funcion global para obtener el JSON
 export async function getJSON() {
-    const response = await fetch("../json/info.json");
+    const response = await fetch("/json/info.json");
     if (!response.ok) {
         throw new Error("Error al cargar el archivo JSON");
     }
