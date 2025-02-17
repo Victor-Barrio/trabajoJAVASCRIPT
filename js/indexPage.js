@@ -39,10 +39,13 @@ async function cambiarNoticia(direccion) {
 
         // Espero a que se termine la animación
         setTimeout(() => {
-            noticiaActual = direccion === "left"
-            ? (noticiaActual - 1 + data.noticias.length) % data.noticias.length
-            : (noticiaActual + 1) % data.noticias.length;
-            
+            // Actualiza el índice de la noticia
+            if (direccion === "left") {
+                noticiaActual = (noticiaActual - 1 + data.noticias.length) % data.noticias.length;
+            } else {
+                noticiaActual = (noticiaActual + 1) % data.noticias.length;
+            }
+
             const proximaNoticia = data.noticias[noticiaActual];
 
             // Actualizamos la noticia

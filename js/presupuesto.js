@@ -23,7 +23,8 @@ const allInputs = document.querySelectorAll(".presupuesto__input");
 presupuestoForm.addEventListener("submit", e => e.preventDefault());
 
 // Declaramos las Expresiones regulares
-const nombreApellidosRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/;
+const nombreRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ]{2,15}+$/;
+const apellidosRegex = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]{2,40}+$/;
 const numeroTelRegex = /^[0-9]{9}$/;
 const envioRegex = /^[0-9]{1,3}$/;
 
@@ -33,7 +34,7 @@ function validarFormulario() {
 
     // Comprobamos cada uno de los campos
     const inputs = [inputNombre, inputApellidos, inputTelefono, inputCorreo, inputEnvio];
-    const regexes = [nombreApellidosRegex, nombreApellidosRegex, numeroTelRegex, emailRegex, envioRegex];
+    const regexes = [nombreRegex, apellidosRegex, numeroTelRegex, emailRegex, envioRegex];
 
     inputs.forEach((input, index) => {
         const esValido = regexes[index].test(input.value);
