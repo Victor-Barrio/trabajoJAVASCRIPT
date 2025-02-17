@@ -168,6 +168,7 @@
 
 .presupuesto__succes.active {
   width: 100%;
+  min-height: 60vh;
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
