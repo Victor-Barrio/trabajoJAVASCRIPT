@@ -14,12 +14,8 @@ body {
   /* Letra de la página */
   font-family: "Raleway Regular", sans-serif;
   color: var(--marronOscuro);
-}
 
-body.views {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Estilo general de los titulos */
@@ -66,6 +62,13 @@ body.views {
   /* Estilos de las paginas */
   .pages {
     padding: 65px;
+  }
+
+  /* Estilo del body en pantallas grandes */
+  body.views {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
   }
 }
 

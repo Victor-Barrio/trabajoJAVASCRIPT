@@ -228,8 +228,12 @@
     text-align: center;
     gap: 30px;
   }
-  
+
   .regalo__container {
+    display: none;
+  }
+  
+  .regalo__container.active {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -331,9 +335,13 @@
   }
   
   .regalo__succes {
+    display: none;
+  }
+
+  .regalo__succes.active {
     width: 100%;
     background-color: var(--marronClaro);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
@@ -624,7 +632,8 @@
     flex-direction: row;
     width: 85%;
     max-width: 1000px;
-    max-height: 530px;
+    max-height: 620px;
+    min-height: 500px;
     height: 100%;
     padding: 30px;
     gap: auto;
@@ -679,7 +688,7 @@
     padding: 100px 45px;
   }
 
-  .regalo__container {
+  .regalo__container.active {
     flex-direction: row;
     justify-content: center;
   }
@@ -732,7 +741,7 @@
     font-size: 18px;
   }
 
-  .regalo__succes {
+  .regalo__succes.active {
     width: 100%;
     max-width: 920px;
     flex-direction: row;

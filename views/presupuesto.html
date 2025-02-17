@@ -13,7 +13,8 @@
 
     <!-- Importamos el CSS y el JS -->
     <link rel="stylesheet" href="../css/main.css">
-    <script type="module" src="../js/script.js"></script>
+    <script type="module" defer src="../js/script.js"></script>
+    <script type="module" defer src="../js/presupuesto.js"></script>
 
     <!-- Importo la librería de los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -54,8 +55,8 @@
     </header>
 
     <!-- Añado el contenido principal de la página -->
-    <main class="pages">
-        <div class="presupuesto">
+    <main class="pages presupuestoPage">
+        <div class="presupuesto active">
             <div class="presupuesto__titlePage">
                 <h1 class="section__title">¿QUIERES COMPRAR UNA DE NUESTRAS CAFETERAS?</h1>
                 <p class="section__subtitle">¡Rellena el formulario y nos pondremos con ello!</p>
@@ -79,7 +80,7 @@
                 <div class="presupuesto__dobleItem">
                     <div class="presupuesto__options">
                         <label for="telefono" class="presupuesto__label">Teléfono de contacto:</label>
-                        <input type="text" id="telefono" name="telefono" class="presupuesto__input" required>
+                        <input type="number" id="telefono" name="telefono" class="presupuesto__input" required>
                         <span class="presupuesto__form-error">Este apartado és incorrecto</span>
                     </div>
 
@@ -93,10 +94,10 @@
                 <div class="presupuesto__options select">
                     <label for="producto" class="presupuesto__label">Elige el producto:</label>
                     <select name="producto" id="producto" class="presupuesto__input">
-                        <option value="opcion1">Prensa francesa (40€)</option>
-                        <option value="opcion2">Máquina espresso (110€)</option>
-                        <option value="opcion3">Moka italiana (20€)</option>
-                        <option value="opcion4">Aeropress (35€)</option>
+                        <option value="40" id="opcion1">Prensa francesa (40€)</option>
+                        <option value="110" id="opcion2">Máquina espresso (110€)</option>
+                        <option value="20" id="opcion3">Moka italiana (20€)</option>
+                        <option value="35" id="opcion4">Aeropress (35€)</option>
                     </select>
                     <span class="presupuesto__form-error">Este apartado és incorrecto</span>
                 </div>
@@ -109,7 +110,7 @@
                     </div>
 
                     <div class="presupuesto__options">
-                        <p class="presupuesto__info">* A partir de los 20 días se hace un descuento de 10€ ya que no es
+                        <p class="presupuesto__info">* A partir de los 20 días no se cobra el envio de 10€ ya que no es
                             un envió urgente. (max 180 días)</p>
                     </div>
                 </div>
@@ -150,7 +151,7 @@
                     <div class="presupuesto__options">
                         <label for="presupuesto" class="presupuesto__label">Presupuesto:</label>
                         <input type="text" id="presupuesto" name="presupuesto" class="presupuesto__input total"
-                            disabled>
+                            value="40€" disabled>
                     </div>
 
                     <div class="presupuesto__options">
@@ -167,7 +168,7 @@
             </form>
         </div>
 
-        <div class="presupuesto__succes active">
+        <div class="presupuesto__succes">
             <div class="presupuesto__succes-text">
                 <h2 class="presupuesto__succes-title">TU PEDIDO HA SIDO RECIBIDO</h2>
                 <p class="presupuesto__succes-subtitle">Hemos recibido correctamente tu pedido, si sucediera cualquier

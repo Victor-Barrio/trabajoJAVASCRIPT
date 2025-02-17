@@ -13,7 +13,8 @@
 
     <!-- Importamos el CSS y el JS -->
     <link rel="stylesheet" href="../css/main.css">
-    <script type="module" src="../js/script.js"></script>
+    <script type="module" defer src="../js/script.js"></script>
+    <script type="module" defer src="../js/galeria.js"></script>
 
     <!-- Importo la librería de los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -70,15 +71,15 @@
                         <div class="galeria__puntuacion">
                             <div class="galeria__puntuacion-text">
                                 <p class="galeria__puntuacion-boldtext">Tiempo:</p>
-                                <p class="galeria__puntuacion-regulartext">3 a 4 minutos</p>
+                                <p class="galeria__puntuacion-regulartext" id="tiempo">3 a 4 minutos</p>
                             </div>
                             <div class="galeria__puntuacion-text">
                                 <p class="galeria__puntuacion-boldtext">Dificultad:</p>
-                                <p class="galeria__puntuacion-regulartext">Media / Alta</p>
+                                <p class="galeria__puntuacion-regulartext" id="dificultad">Media / Alta</p>
                             </div>
                             <div class="galeria__puntuacion-text">
                                 <p class="galeria__puntuacion-boldtext">Sabor:</p>
-                                <p class="galeria__puntuacion-regulartext">Fuerte</p>
+                                <p class="galeria__puntuacion-regulartext" id="sabor">Fuerte</p>
                             </div>
                         </div>
 
@@ -96,13 +97,13 @@
 
             <div class="galeria__slider">
                 <img src="../assets/images/galeria/Dot.png" alt="Circulo para cambiar el contenido"
-                    class="galeria__slider-dot active" width="10" height="10">
+                    class="galeria__slider-dot active" width="10" height="10" id="0">
                 <img src="../assets/images/galeria/Dot.png" alt="Circulo para cambiar el contenido"
-                    class="galeria__slider-dot" width="10" height="10">
+                    class="galeria__slider-dot" width="10" height="10" id="1">
                 <img src="../assets/images/galeria/Dot.png" alt="Circulo para cambiar el contenido"
-                    class="galeria__slider-dot" width="10" height="10">
+                    class="galeria__slider-dot" width="10" height="10" id="2">
                 <img src="../assets/images/galeria/Dot.png" alt="Circulo para cambiar el contenido"
-                    class="galeria__slider-dot" width="10" height="10">
+                    class="galeria__slider-dot" width="10" height="10" id="3">
             </div>
         </div>
     </main>
