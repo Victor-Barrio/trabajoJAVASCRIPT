@@ -3,17 +3,17 @@
         {
             "titulo": "Antes de tomar café, la gente se lavaba las manos con él",
             "texto": "Unos cinco siglos antes de la popularidad del café como bebida caliente, un ingrediente misterioso comenzó a aparecer en libros árabes sobre medicina y botánica. Las descripciones de este ingrediente eran muy similares a las de nuestro café. Sin embargo, en lugar de bunn, se llamaba litera y, en lugar de beber este ingrediente, se usaba principalmente para limpiar y refrescar las manos.",
-            "imagen": "../assets/images/noticias/lavado_manos.png"
+            "imagen": "./assets/images/noticias/lavado_manos.png"
         },
         {
             "titulo": "El origen del café descafeinado",
             "texto": "Cuando el padre de Ludwig Roselius murió a la edad de 59 años en 1902, el médico que atendió al padre de Roselius explicó que la causa de la muerte se debía a la cantidad de café que el fallecido bebía todos los días. Así comenzó la búsqueda del café descafeinado durante toda su vida por parte de Roselius hijo.",
-            "imagen": "../assets/images/noticias/busqueda_cientifica.png"
+            "imagen": "./assets/images/noticias/busqueda_cientifica.png"
         },
         {
             "titulo": "El viaje de una bebida que conquistó el mundo",
             "texto": "El café, esa bebida oscura y rica que acompaña nuestros días, ha pasado de ser un manjar exclusivo de rituales religiosos a convertirse en una fuerza imparable que impulsa economías y estilos de vida. Cada día se consumen más de dos mil millones de tazas de café alrededor del mundo, y su popularidad no deja de crecer. Países que históricamente preferían el té, como China, están sucumbiendo al encanto de esta bebida, lo que sugiere que el café pronto podría convertirse en la bebida más popular del planeta.",
-            "imagen": "../assets/images/noticias/viaje.png"
+            "imagen": "./assets/images/noticias/viaje.png"
         }
     ],
     "galeria": [
